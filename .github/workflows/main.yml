@@ -22,5 +22,5 @@ jobs:
         run: echo "Hello, world! from windows"
       - name: Run a multi-line script
         run: |
-          echo "Add other actions to build,""
+          echo "Add other actions to build,"
           Get-Date
