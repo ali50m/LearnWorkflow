@@ -1,0 +1,43 @@
+-------------------- A Bench.sh Script By Teddysun -------------------
+ Version            : v2022-06-01
+ Usage              : wget -qO- bench.sh | bash
+----------------------------------------------------------------------
+ CPU Model          : Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz
+ CPU Cores          : 2 @ 2593.906 MHz
+ CPU Cache          : 36608 KB
+ AES-NI             : Enabled
+ VM-x/AMD-V         : Enabled
+ Total Disk         : 75.9 GB (33.7 GB Used)
+ Total Mem          : 3.8 GB (926.9 MB Used)
+ System uptime      : 0 days, 0 hour 19 min
+ Load average       : 0.27, 0.69, 0.84
+ OS                 : Ubuntu 20.04.5 LTS
+ Arch               : x86_64 (64 Bit)
+ Kernel             : 5.4.0-1103-azure
+ TCP CC             : cubic
+ Virtualization     : Docker
+ Organization       : AS8075 Microsoft Corporation
+ Location           : Singapore / SG
+ Region             : Singapore
+----------------------------------------------------------------------
+ I/O Speed(1st run) : 266 MB/s
+ I/O Speed(2nd run) : 261 MB/s
+ I/O Speed(3rd run) : 282 MB/s
+ I/O Speed(average) : 269.7 MB/s
+----------------------------------------------------------------------
+ Node Name        Upload Speed      Download Speed      Latency     
+ Speedtest.net    4757.77 Mbps      6583.62 Mbps        1.25 ms     
+ Los Angeles, US  399.40 Mbps       3083.30 Mbps        232.95 ms   
+ Dallas, US       382.91 Mbps       3019.83 Mbps        233.86 ms   
+ Montreal, CA     140.99 Mbps       924.26 Mbps         236.97 ms   
+ Paris, FR        824.93 Mbps       5324.09 Mbps        144.13 ms   
+ Amsterdam, NL    582.73 Mbps       4276.80 Mbps        154.95 ms   
+ Shanghai, CN     1227.92 Mbps      5932.32 Mbps        83.71 ms    
+ Nanjing, CN      804.03 Mbps       6224.57 Mbps        66.28 ms    
+ Hongkong, CN     3312.68 Mbps      7582.02 Mbps        32.67 ms    
+ Singapore, SG    4758.40 Mbps      8938.27 Mbps        1.69 ms     
+ Tokyo, JP        975.57 Mbps       5935.45 Mbps        78.18 ms    
+----------------------------------------------------------------------
+ Finished in        : 5 min 20 sec
+ Timestamp          : 2023-02-17 02:45:15 UTC
+----------------------------------------------------------------------
