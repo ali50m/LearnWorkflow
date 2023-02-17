@@ -1,0 +1,41 @@
+-------------------- A Bench.sh Script By Teddysun -------------------
+ Version            : v2022-06-01
+ Usage              : wget -qO- bench.sh | bash
+----------------------------------------------------------------------
+ CPU Model          : AMD EPYC 7K62 48-Core Processor
+ CPU Cores          : 1 @ 2595.122 MHz
+ CPU Cache          : 512 KB
+ AES-NI             : Enabled
+ VM-x/AMD-V         : Disabled
+ Total Disk         : 58.9 GB (5.1 GB Used)
+ Total Mem          : 1.9 GB (603.2 MB Used)
+ System uptime      : 0 days, 2 hour 35 min
+ Load average       : 0.10, 0.05, 0.01
+ OS                 : Ubuntu 22.04 LTS
+ Arch               : x86_64 (64 Bit)
+ Kernel             : 5.15.0-48-generic
+ TCP CC             : cubic
+ Virtualization     : KVM
+ Organization       : AS45090 Shenzhen Tencent Computer Systems Company Limited
+ Location           : Shanghai / CN
+ Region             : Shanghai
+----------------------------------------------------------------------
+ I/O Speed(1st run) : 173 MB/s
+ I/O Speed(2nd run) : 158 MB/s
+ I/O Speed(3rd run) : 157 MB/s
+ I/O Speed(average) : 162.7 MB/s
+----------------------------------------------------------------------
+ Node Name        Upload Speed      Download Speed      Latency     
+ Speedtest.net    6.06 Mbps         100.99 Mbps         11.71 ms    
+ Los Angeles, US  6.41 Mbps         3.37 Mbps           223.61 ms   
+ Dallas, US       6.30 Mbps         112.88 Mbps         184.95 ms   
+ Montreal, CA     6.17 Mbps         110.21 Mbps         210.46 ms   
+ Paris, FR        6.59 Mbps         109.42 Mbps         233.98 ms   
+ Amsterdam, NL    6.59 Mbps         0.40 Mbps           324.96 ms   
+ Hongkong, CN     5.31 Mbps         1.63 Mbps           39.44 ms    
+ Singapore, SG    6.38 Mbps         0.89 Mbps           349.89 ms   
+ Tokyo, JP        6.19 Mbps         0.45 Mbps           66.94 ms    
+----------------------------------------------------------------------
+ Finished in        : 6 min 42 sec
+ Timestamp          : 2023-02-17 10:47:36 CST
+----------------------------------------------------------------------
