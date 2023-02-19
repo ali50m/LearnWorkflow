@@ -13,4 +13,4 @@ jobs:
           ls -alF
       - id: tree
         run:
-          tree
+          tree -a
