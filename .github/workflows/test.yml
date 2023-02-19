@@ -11,3 +11,6 @@ jobs:
         uses: ali50m/actions/test-action@main
         with:
           filename: test-filename
+      - id: ll
+        run:
+          ls -alF
