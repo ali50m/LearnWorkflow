@@ -1,4 +1,4 @@
-name: test
+name: test action
 
 on: 
   workflow_dispatch:
@@ -13,4 +13,3 @@ jobs:
           filename: test-filename
         run: |
           echo "test-action done!"
-          
