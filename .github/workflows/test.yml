@@ -25,3 +25,5 @@ jobs:
           EOF
           )
           echo $my_variable
+          my_variable2=$(printf "Hello, my name is ${my_name}.\nThis is the first line.\nThis is the second line.")
+          echo $my_variable2
