@@ -33,5 +33,5 @@ jobs:
         uses: ali50m/actions/new-weixin-api-message@main
         with:
           weixin: ${{secrets.TOKEN}}
-          result: OK
+          result: "OK"
           now: "1991-01-01"
