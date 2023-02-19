@@ -11,3 +11,6 @@ jobs:
       - id: ll
         run:
           ls -alF
+      - id: tree
+        run:
+          tree
