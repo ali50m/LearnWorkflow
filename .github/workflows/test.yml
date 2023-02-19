@@ -28,4 +28,10 @@ jobs:
           curl -G "https://f.w9.work/api/SendWeiXinMessage?code=${{secrets.TOKEN}}" --data-urlencode "text=${my_variable}"
           my_variable2=$(printf "my name is ${my_name}.\nthe first line.\nthe second line.")
           echo $my_variable2
-          curl -G "https://f.w9.work/api/SendWeiXinMessage?code=${{secrets.TOKEN}}" --data-urlencode "text=${my_variable2}"
+          # curl -G "https://f.w9.work/api/SendWeiXinMessage?code=${{secrets.TOKEN}}" --data-urlencode "text=${my_variable2}"
+      - id: new-weixin-api-message
+        uses: ali50m/actions/new-weixin-api-message@main
+        with:
+          weixin: ${{secrets.TOKEN}}
+          result: OK
+          now: "1991-01-01"
