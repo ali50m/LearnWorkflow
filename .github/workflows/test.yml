@@ -19,13 +19,13 @@ jobs:
           my_name="John"
           my_variable=$(cat << EOF
           Hello, my name is ${my_name}.
-          This is the first line.
-          This is the second line.
-          And this is the third line.
+          first line.
+          second line.
+          the third line.
           EOF
           )
           echo $my_variable
           curl -G "https://f.w9.work/api/SendWeiXinMessage?code=${{secrets.TOKEN}}" --data-urlencode "text=${my_variable}"
-          my_variable2=$(printf "Hello, my name is ${my_name}.\nThis is the first line.\nThis is the second line.")
+          my_variable2=$(printf "my name is ${my_name}.\nthe first line.\nthe second line.")
           echo $my_variable2
           curl -G "https://f.w9.work/api/SendWeiXinMessage?code=${{secrets.TOKEN}}" --data-urlencode "text=${my_variable2}"
