@@ -14,3 +14,14 @@ jobs:
       - id: tree
         run:
           tree -a
+      - name: Define multiline variable
+        run: |
+          my_name="John"
+          my_variable=$(cat << EOF
+          Hello, my name is ${my_name}.
+          This is the first line.
+          This is the second line.
+          And this is the third line.
+          EOF
+          )
+          echo $my_variable
