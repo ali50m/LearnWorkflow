@@ -7,10 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - id: test-action
-        uses: ali50m/actions/test-action@main
-        with:
-          filename: test-filename
+      - uses: ali50m/actions/my-check-out@main
       - id: ll
         run:
           ls -alF
