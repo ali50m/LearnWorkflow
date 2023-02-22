@@ -15,6 +15,17 @@ jobs:
           echo Add other actions to build,
           date
 
+      - name: Check OS
+        run: |
+          if [ "$RUNNER_OS" == "Windows" ]; then
+            echo "Running on Windows"
+          elif [ "$RUNNER_OS" == "Linux" ]; then
+            echo "Running on Linux"
+          elif [ "$RUNNER_OS" == "macOS" ]; then
+            echo "Running on macOS"
+          else
+            echo "Unknown OS"
+          fi
   build-on-windows:
     runs-on: windows-latest
     steps:
@@ -24,3 +35,15 @@ jobs:
         run: |
           echo "Add other actions to build,"
           Get-Date
+
+      - name: Check OS
+        run: |
+          if [ "$RUNNER_OS" == "Windows" ]; then
+            echo "Running on Windows"
+          elif [ "$RUNNER_OS" == "Linux" ]; then
+            echo "Running on Linux"
+          elif [ "$RUNNER_OS" == "macOS" ]; then
+            echo "Running on macOS"
+          else
+            echo "Unknown OS"
+          fi
