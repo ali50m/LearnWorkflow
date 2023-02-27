@@ -29,14 +29,23 @@ jobs:
           echo ${{ github.repository }}
           echo ${{ github.event.repository.name }}
           
-      - uses: actions/checkout@v3
-      - name: push-to-gitee
-        uses: wangchucheng/git-repo-sync@v0.1.0
-        with:
-          target-url: https://gitee.com/zhuceji8/${{ github.event.repository.name }}.git
+#     - uses: actions/checkout@v3
+#     - name: push-to-gitee
+#       uses: wangchucheng/git-repo-sync@v0.1.0
+#       with:
+#         target-url: https://gitee.com/zhuceji8/${{ github.event.repository.name }}.git
 #         target-url: https://gitee.com/zhuceji8/LearnWorkflow.git
-          target-username: zhuceji8
-          target-token: ${{secrets.GITEE_TOKEN}}
+#         target-username: zhuceji8
+#         target-token: ${{secrets.GITEE_TOKEN}}
+          
+      - name: Mirror the Github organization repos to Gitee.
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: ${{ github.repository }}
+          dst: gitee/${{ github.event.repository.name }}
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          account_type: user
           
 # build-on-windows:
 #   runs-on: windows-latest
