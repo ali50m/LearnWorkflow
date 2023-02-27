@@ -28,6 +28,7 @@ jobs:
           fi
           echo ${{ github.repository }}
           echo ${{ github.event.repository.name }}
+          echo ${{ github.repository_owner }}
           
 #     - uses: actions/checkout@v3
 #     - name: push-to-gitee
