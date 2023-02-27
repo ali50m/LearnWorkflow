@@ -26,7 +26,8 @@ jobs:
           else
             echo "Unknown OS"
           fi
-          
+          echo ${{ github.repository }}
+
 # build-on-windows:
 #   runs-on: windows-latest
 #   steps:
