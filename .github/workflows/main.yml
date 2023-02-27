@@ -41,11 +41,13 @@ jobs:
       - name: Mirror the Github organization repos to Gitee.
         uses: Yikun/hub-mirror-action@master
         with:
-          src: ${{ github.repository }}
-          dst: gitee/${{ github.event.repository.name }}
+          src: github/Yikun
+          dst: gitee/zhuceji8
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
-          account_type: user
+          account_type: user    
+          static_list: ${{ github.event.repository.name }}
+
           
 # build-on-windows:
 #   runs-on: windows-latest
