@@ -26,24 +26,38 @@ jobs:
           else
             echo "Unknown OS"
           fi
-  build-on-windows:
-    runs-on: windows-latest
-    steps:
-      - name: Run a one-line script
-        run: echo "Hello, world! from windows"
-      - name: Run a multi-line script
-        run: |
-          echo "Add other actions to build,"
-          Get-Date
+          
+# build-on-windows:
+#   runs-on: windows-latest
+#   steps:
+#     - name: Run a one-line script
+#       run: echo "Hello, world! from windows"
+#     - name: Run a multi-line script
+#       run: |
+#         echo "Add other actions to build,"
+#         Get-Date
+#     - name: Check OS
+#       run: |
+#         if [ "$RUNNER_OS" == "Windows" ]; then
+#           echo "Running on Windows"
+#         elif [ "$RUNNER_OS" == "Linux" ]; then
+#           echo "Running on Linux"
+#         elif [ "$RUNNER_OS" == "macOS" ]; then
+#           echo "Running on macOS"
+#         else
+#           echo "Unknown OS"
+#         fi
 
-      - name: Check OS
-        run: |
-          if [ "$RUNNER_OS" == "Windows" ]; then
-            echo "Running on Windows"
-          elif [ "$RUNNER_OS" == "Linux" ]; then
-            echo "Running on Linux"
-          elif [ "$RUNNER_OS" == "macOS" ]; then
-            echo "Running on macOS"
-          else
-            echo "Unknown OS"
-          fi
+# sync-to-gitee:
+#   needs: [build]
+#   runs-on: ubuntu-latest
+#   steps:
+#     - name: Async Github Branch To Gitee
+#       uses: shanghaobo/github-branch-gitee@master
+#       with:
+#         github_repo: shanghaobo/test-async
+#         github_branch: test
+#         gitee_repo: shanghaobo/test-async2
+#         gitee_branch: master
+#         username: ${{ secrets.GITEE_USERNAME }}
+#         password: ${{ secrets.GITEE_PASSWORD }}
