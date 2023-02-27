@@ -38,14 +38,6 @@ jobs:
 #         target-url: https://gitee.com/zhuceji8/LearnWorkflow.git
 #         target-username: zhuceji8
 #         target-token: ${{secrets.GITEE_TOKEN}}
-
-      - name: Cache src repos
-        uses: actions/cache@v3
-        id: cache
-        with:
-          path: ${{ github.workspace }}/hub-mirror-cache
-          key: ${{ runner.os }}-hub-repos-cache-${{ steps.get-time.outputs.date }}
-          restore-keys: ${{ runner.os }}-hub-repos-cache
           
       - name: Mirror the Github organization repos to Gitee.
         uses: Yikun/hub-mirror-action@master
