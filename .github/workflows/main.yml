@@ -29,7 +29,13 @@ jobs:
           echo ${{ github.repository }}
           echo ${{ github.event.repository.name }}
           
-
+      - name: push-to-gitee
+        uses: wangchucheng/git-repo-sync@v0.1.0
+        with:
+          target-url: https://gitee.com/zhuceji8/${{ github.event.repository.name }}.git
+          target-username: zhuceji8
+          target-token: ${{secrets.GITEE_TOKEN}}
+          
 # build-on-windows:
 #   runs-on: windows-latest
 #   steps:
