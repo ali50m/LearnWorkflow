@@ -27,6 +27,8 @@ jobs:
             echo "Unknown OS"
           fi
           echo ${{ github.repository }}
+          echo ${{ github.event.repository.name }}
+          
 
 # build-on-windows:
 #   runs-on: windows-latest
