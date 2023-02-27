@@ -50,7 +50,7 @@ jobs:
       - name: Mirror the Github organization repos to Gitee.
         uses: Yikun/hub-mirror-action@master
         with:
-          src: github/{{ github.repository_owner }}
+          src: github/ali50m
           dst: gitee/zhuceji8
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
