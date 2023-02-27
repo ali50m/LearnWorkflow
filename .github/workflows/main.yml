@@ -29,11 +29,12 @@ jobs:
           echo ${{ github.repository }}
           echo ${{ github.event.repository.name }}
           
+      - uses: actions/checkout@v3
       - name: push-to-gitee
         uses: wangchucheng/git-repo-sync@v0.1.0
         with:
-#         target-url: https://gitee.com/zhuceji8/${{ github.event.repository.name }}.git
-          target-url: https://gitee.com/zhuceji8/LearnWorkflow.git
+          target-url: https://gitee.com/zhuceji8/${{ github.event.repository.name }}.git
+#         target-url: https://gitee.com/zhuceji8/LearnWorkflow.git
           target-username: zhuceji8
           target-token: ${{secrets.GITEE_TOKEN}}
           
