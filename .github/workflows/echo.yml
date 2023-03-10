@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - id: record-begin-time
-        uses: ali50m/actions/new-record-begin-time@main
+        uses: ali50m/actions/record-begin-time@main
         
       - name: Check OS on Linux
         if: runner.os == 'Linux'
