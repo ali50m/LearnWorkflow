@@ -16,10 +16,10 @@ jobs:
       - name: Check OS on Linux
         if: runner.os == 'Linux'
         run: |
-            echo "This is Linux OS"
+            echo "This is Linux"
             echo ${{steps.record-begin-time.outputs.now}}
       - name: Check OS on Windows
-        if: runner.os == 'Linux'
+        if: runner.os == 'Windows'
         run: |
             echo "This is Windows"
             echo ${{steps.record-begin-time.outputs.now}}
