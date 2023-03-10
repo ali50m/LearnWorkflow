@@ -1,0 +1,23 @@
+name: echo os ver
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Check OS
+        run: |
+          if [ $RUNNER_OS == "Linux" ]; then
+            echo "This is Linux OS"
+          fi
+          if [ $RUNNER_OS == "Windows" ]; then
+            echo "This is Windows OS"
+          fi
+          if [ $RUNNER_OS == "macOS" ]; then
+            echo "This is macOS"
+          fi
