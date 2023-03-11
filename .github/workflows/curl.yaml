@@ -14,3 +14,4 @@ jobs:
         if: runner.os == 'Windows'
         run: |
             curl --version
+            winget -v
